@@ -15,6 +15,15 @@ VNC端口为``` 1``` 或者``` 5901``` ,可自行尝试连接.(成功后VNC功�
 
 特别注意:OpenVZ构架不适用.
 
+## cloudcone机器DD完后需要再vnc里设置一番
+完成后，在vnc中应该能看到grub2 和grub legacy两条
+直接按C,手动输入exit，正常进入系统
+进入系统后，输入下面代码
+```
+ln -s /boot/grub/ /boot/grub2
+```
+
+
 ## 傻瓜式一键脚本
 ```
 ##镜像文件在OneDrive
